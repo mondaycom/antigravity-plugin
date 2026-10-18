@@ -1,7 +1,7 @@
 # monday.com
 
-Bring monday.com into Antigravity. Create, update and assign items and set up forms without leaving your
-editor.
+Bring monday.com into Antigravity. Create, update and assign items, write docs and set up forms without
+leaving your editor.
 
 ## What you get
 
@@ -9,6 +9,7 @@ editor.
   for boards, items, columns, docs, forms, dashboards, workspaces and more.
 - **Skills**
   - `/task-management` - create, update, assign and move items, with correct column-value formats.
+  - `/docs-collaborator` - create, read, edit and comment on monday docs, including live column embeds and mentions.
   - `/forms-builder` - create, edit and publish monday WorkForms.
 
 ## Getting started

@@ -2,8 +2,8 @@
   "$schema": "https://antigravity.google/schemas/v1/plugin.json",
   "name": "monday",
   "displayName": "monday.com",
-  "version": "1.0.0",
-  "description": "Plan and track work in monday.com from Antigravity: create, update and assign items on your boards, and build forms that turn requests into items.",
+  "version": "1.1.0",
+  "description": "Plan and track work in monday.com from Antigravity: create, update and assign items, write docs, and build forms that turn requests into items.",
   "logo": "assets/logo.png",
   "suggestedPrompts": [
     "Create a monday.com item for each TODO in this file and assign them to me",
