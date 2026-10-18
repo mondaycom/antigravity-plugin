@@ -1,0 +1,29 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "monday",
+  "displayName": "monday.com",
+  "version": "1.0.0",
+  "description": "Plan and track work in monday.com from Antigravity: create, update and assign items on your boards, and build forms that turn requests into items.",
+  "logo": "assets/logo.png",
+  "suggestedPrompts": [
+    "Create a monday.com item for each TODO in this file and assign them to me",
+    "Create a monday.com bug report form with summary, steps to reproduce and severity questions"
+  ],
+  "category": "Productivity",
+  "keywords": [
+    "monday",
+    "project-management",
+    "work-management",
+    "tasks",
+    "boards",
+    "crm"
+  ],
+  "author": {
+    "name": "monday.com",
+    "email": "support@monday.com",
+    "url": "https://monday.com"
+  },
+  "homepage": "https://monday.com/w/mcp",
+  "repository": "https://github.com/mondaycom/antigravity-plugin",
+  "license": "MIT"
+}
