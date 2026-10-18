@@ -9,7 +9,6 @@
     "Create a monday.com item for each TODO in this file and assign them to me",
     "Create a monday.com bug report form with summary, steps to reproduce and severity questions"
   ],
-  "category": "Productivity",
   "keywords": [
     "monday",
     "project-management",
