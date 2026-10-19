@@ -8,6 +8,7 @@ leaving your editor.
 - **monday.com MCP server** - the official monday.com MCP server (`https://mcp.monday.com/mcp`), with tools
   for boards, items, columns, docs, forms, dashboards, workspaces and more.
 - **Skills**
+  - `/onboard-to-monday` - first-run setup: builds a board tailored to your work, with starter items and an automation.
   - `/task-management` - create, update, assign and move items, with correct column-value formats.
   - `/docs-collaborator` - create, read, edit and comment on monday docs, including live column embeds and mentions.
   - `/forms-builder` - create, edit and publish monday WorkForms.
