@@ -4,7 +4,7 @@
   "displayName": "monday.com",
   "version": "1.2.0",
   "description": "Plan and track work in monday.com from Antigravity: create, update and assign items, write docs, and build forms that turn requests into items.",
-  "logo": "assets/logo.png",
+  "logo": "assets/logo.svg",
   "suggestedPrompts": [
     "Onboard me to monday.com",
     "Create a monday.com item for each TODO in this file and assign them to me",
