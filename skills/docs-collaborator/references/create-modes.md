@@ -24,8 +24,25 @@ Triggers that escalate to active mode:
 
 Resolution chain (name -> ID, never ask the user for IDs):
 - Item name -> `get_board_items_page` with `searchTerm` scoped to the named board
-- Board name -> `search` with `searchType: BOARD`
+- Board name -> `search` with `searchType: "BOARD"` and `searchTerm`
 - Owner name -> `list_users_and_teams` with `name:` (scoped per cross-skill rule)
 - Ambiguous match -> ask once with the top 3 candidates; do not silently pick
 
 **Active mode communication contract.** When the skill picks items / users in active mode, always state the choice and the reasoning: "Picked items X, Y, Z because <reason>. Override by naming different items."
+
+## Common doc shapes
+
+Starting points when the user names a use case. Extend freely; they are examples, not boundaries.
+
+- **Meeting notes:** title, date, attendees (with `@mentions`), agenda bullets, decisions, action items table, follow-ups.
+- **Weekly update:** highlights, key metrics, risks, next-week plan.
+- **RFC:** problem, proposed solution, alternatives considered, open questions, decision log.
+- **Runbook:** trigger, prerequisites, numbered procedure, rollback steps, escalation path.
+- **Postmortem:** incident summary, timeline, root cause, what went well, what did not, action items.
+
+## Markdown notes
+
+- Markdown headings (`#`, `##`, `###`) map to LARGE_TITLE / MEDIUM_TITLE / SMALL_TITLE blocks.
+- Markdown tables work and the cells will be populated with the values you put in. **This is the only way to get pre-filled table content.** Cell-level API population after creation is not supported.
+- Markdown images and links work. Markdown cannot reference monday assets: for an image block, use `update_doc` `create_block` with `block_type: "image"` and either `public_url` or `asset_id`. An `asset_id` must already exist - the `assetId` in an item's file column, or the `asset_id` that `finalize_asset_upload` returns after `get_asset_upload_url` (only when the client can PUT the file itself). Do not use the `public_url` from `get_assets` as an image source: it expires after an hour.
+- Markdown does not have notice_box, layout, embed, divider-with-spacing, mention, or live column-value syntax. Add those via `update_doc` after the doc is created.
